@@ -22,6 +22,7 @@ import type { MulticallResults } from '../../types/multicall.js'
 import type { StateOverride } from '../../types/stateOverride.js'
 import type { TransactionRequest } from '../../types/transaction.js'
 import type { ExactPartial, UnionOmit } from '../../types/utils.js'
+import type { RequestErrorType } from '../../utils/buildRequest.js'
 import {
   type DecodeFunctionResultErrorType,
   decodeFunctionResult,
@@ -132,6 +133,7 @@ export type SimulateBlocksErrorType =
   | ParseAccountErrorType
   | SerializeStateOverrideErrorType
   | NumberToHexErrorType
+  | RequestErrorType
   | ErrorType
 
 /**
